@@ -79,6 +79,7 @@ SoLuongKhach int,
 MaKD int,
 MaHDV int,
 MaDD int,
+DonGia float,
 foreign key (MaKD) references KhachDoan(MaKD),
 foreign key (MaHDV) references HuongDanVien(MaHDV),
 foreign key (MaDD) references DiaDiem(MaDD),
@@ -199,9 +200,9 @@ insert into NhaHang values(N'Huế','0383333333',N'Vũng Tàu','4')
 insert into NhaHang values(N'Nhật','0384444444',N'Hồ Chí Minh','2')
 insert into NhaHang values(N'Hàn','0385555555',N'Đà Nẵng','3')
 
-insert into Tour values(N'Tour đi Bến Nhà Rồng','1','05/20/2018','12','3','2','1')
-insert into Tour values(N'Tour đi Vinpearl land','4','06/20/2018','13','1','1','4')
-insert into Tour values(N'Tour đi Cồn Thới Sơn','3','07/20/2018','14','2','3','2')
+insert into Tour values(N'Tour đi Bến Nhà Rồng','1','05/20/2018','12','3','2','1','200000')
+insert into Tour values(N'Tour đi Vinpearl land','4','06/20/2018','13','1','1','4','400000')
+insert into Tour values(N'Tour đi Cồn Thới Sơn','3','07/20/2018','14','2','3','2','8000000')
 
 insert into KhachLe_Tour values('3','1','05/21/2018')
 insert into KhachLe_Tour values('2','2','06/23/2018')
